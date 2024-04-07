@@ -29,5 +29,5 @@ jobs:
           envs: PROJECT_PATH
           script: |
             cd $PROJECT_PATH
-            git pull git@github.com:Eriyc/cunk-ai.git
+            git pull git@github.com:Eriyc/crunk-ai-bot.git
             npm run build:start
