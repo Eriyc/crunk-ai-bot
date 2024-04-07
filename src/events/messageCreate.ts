@@ -2,7 +2,7 @@ import { ArgsOf, Client } from "discordx";
 
 import { Discord, Guard, Injectable, On } from "@/decorators";
 import { Maintenance } from "@/guards";
-import { AI } from "src/services/OpenAI";
+import { AI } from "@/services";
 
 @Discord()
 @Injectable()

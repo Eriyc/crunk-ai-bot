@@ -1,9 +1,9 @@
-import { ApplicationCommandOptionType, CommandInteraction } from "discord.js";
+import { CommandInteraction } from "discord.js";
 import { Client } from "discordx";
 
-import { Discord, Guard, Injectable, Slash, SlashOption } from "@/decorators";
+import { Discord, Guard, Injectable, Slash } from "@/decorators";
 import { Disabled } from "@/guards";
-import { AI } from "src/services/OpenAI";
+import { AI } from "@/services";
 
 @Discord()
 @Injectable()
