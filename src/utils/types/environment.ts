@@ -11,6 +11,8 @@ export const env = cleanEnv(process.env, {
 	TEST_GUILD_ID: str(),
 	BOT_OWNER_ID: str(),
 
+	OPENAI_SECRET: str(),
+
 	DATABASE_HOST: str({ default: undefined }),
 	DATABASE_PORT: num({ default: undefined }),
 	DATABASE_NAME: str({ default: undefined }),
@@ -31,6 +33,7 @@ export function checkEnvironmentVariables() {
 			DATABASE_NAME: str(),
 			DATABASE_USER: str(),
 			DATABASE_PASSWORD: str(),
+			OPENAI_SECRET: str(),
 		})
 	}
 

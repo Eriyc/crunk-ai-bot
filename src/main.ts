@@ -115,6 +115,8 @@ async function init() {
 	const db = await resolveDependency(Database)
 	await db.initialize()
 
+	
+
 	// init the client
 	DIService.engine = tsyringeDependencyRegistryEngine.setInjector(container)
 	const client = new Client(clientConfig())
